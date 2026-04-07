@@ -1,18 +1,18 @@
 ---
 import Navigation from '../components/Navigation.astro';
-
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 
 const pageTitle = "About Me";
 
 const identity = {
-  firstName: "Sarah",
-  country: "Canada",
-  occupation: "Technical Writer",
-  hobbies: ["photography", "birdwatching", "baseball"],
+  firstName: "Ewan",
+  country: "Colorado",
+  occupation: "Math Tutor",
+  hobbies: ["hiking", "camping", "climbing"],
 };
 
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+const skills = ["SQL", "C++", "JavaScript", "Excel", "Linux", "Problem-Solving"];
 
 const happy = true;
 const finished = false;
@@ -64,6 +64,7 @@ const skillColor = "crimson";
         {finished && <p>I finished this tutorial!</p>}
 
         {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
-
+        
+        <Footer />
     </body>
 </html>
