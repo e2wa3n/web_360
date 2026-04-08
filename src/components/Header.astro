@@ -2,7 +2,11 @@
 import Navigation from './Navigation.astro';
 ---
 <header>
-    <nav>
-        <Navigation />
-    </nav>
+  <nav>
+    {/* This is the button your menu.js is looking for */}
+    <button class="menu" aria-expanded="false">Menu</button>
+    
+    {/* This brings in your updated links wrapper */}
+    <Navigation />
+  </nav>
 </header>
