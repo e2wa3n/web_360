@@ -1,9 +1,21 @@
 ---
-const platform = "github";
-const platform2 = "handshake"
+import Social from './Social.astro';
 ---
 
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+
 <footer>
-    <p>Learn more about my projects on <a href={`https://www.${platform}.com/e2wa3n`}>{platform}</a>!</p>
-    <p>Learn more about my projects on <a href={`https://fortlewis.joinhandshake.com/profiles/ewanc`}>{platform2}</a>!</p>
+  {/* The standard GitHub link */}
+  <Social platform="github" username="e2wa3n" />
+  
+  {/* The custom Handshake link */}
+  <Social platform="fortlewis.joinhandshake" username="profiles/ewanc" />
 </footer>
+
+
